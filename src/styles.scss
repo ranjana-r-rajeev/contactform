@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$green-lighter: hsl(148, 38%, 91%);
+$green-medium: hsl(169, 82%, 27%);
+$red-color: hsl(0, 66%, 54%);
+$white-color: hsl(0, 0%, 100%);
+$grey-medium: hsl(186, 15%, 59%);
+$grey-darker: hsl(187, 24%, 22%);
+
+body {
+  background-color: $green-lighter;
+}
+
+.required-asterisk {
+  color: $green-medium;
+}
+
+.radio-border {
+  color: $grey-darker;
+}
+
+.button-color {
+  background-color: $green-medium;
+  color: $white-color;
+}
+
+.button-color:hover {
+  background-color: hsl(169, 87%, 20%) !important;
+  color: $white-color;
+}
+
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.small-error-message .ant-form-item-explain {
+  font-size: 12px;
+}
+
+.input-area-border:hover {
+  border-color: $green-medium;
+}
+
+.input-area-border:focus {
+  border-color: $green-medium;
+}
+
+.custom-radio:hover .ant-radio-inner {
+  border-color: $green-medium;
+}
+
+.custom-radio .ant-radio-checked .ant-radio-inner {
+  border-color: $green-medium;
+  background-color: $green-medium;
+}
+
+.input-area-border.selected {
+  border-color: $green-medium;
+  background-color: $green-lighter;
+}
+
+.custom-checkbox .ant-checkbox:hover .ant-checkbox-inner,
+.custom-checkbox .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: $green-medium;
+}
+
+.custom-checkbox:hover .ant-checkbox .ant-checkbox-inner {
+  border-color: $green-medium;
+}
+
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: $green-medium;
+  background-color: $green-medium !important;
+}
